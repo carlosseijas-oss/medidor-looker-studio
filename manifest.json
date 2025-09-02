@@ -1,7 +1,7 @@
 {
-  "name": "Medidor de Prueba Mínimo",
+  "name": "Medidor Estructurado",
   "organization": "carlosseijas-oss",
-  "description": "Una versión de prueba simplificada para depurar.",
+  "description": "Una visualización organizada siguiendo la guía de Google.",
   "logoUrl": "https://i.imgur.com/S6pKYyT.png",
   "organizationUrl": "https://github.com/carlosseijas-oss",
   "supportUrl": "https://github.com/carlosseijas-oss",
@@ -11,23 +11,13 @@
   "devMode": "DEVMODE_ENABLED",
   "components": [
     {
-      "id": "minimalGaugeComponent",
-      "name": "Medidor Mínimo de Prueba",
-      "description": "Una versión de prueba simplificada.",
+      "id": "structuredGaugeComponent",
+      "name": "Medidor Estructurado",
+      "description": "Una versión que carga su config desde un JSON separado.",
       "resource": {
         "js": "https://carlosseijas-oss.github.io/medidor-looker-studio/gauge.js",
-        "css": "https://carlosseijas-oss.github.io/medidor-looker-studio/gauge.css"
-      }
-    }
-  ],
-  "data": [
-    {
-      "id": "metric",
-      "label": "Métrica",
-      "type": "METRIC",
-      "options": {
-        "min": 1,
-        "max": 1
+        "css": "https://carlosseijas-oss.github.io/medidor-looker-studio/gauge.css",
+        "config": "https://carlosseijas-oss.github.io/medidor-looker-studio/config.json"
       }
     }
   ]
