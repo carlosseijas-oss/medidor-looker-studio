@@ -1,8 +1,8 @@
 {
-  "name": "Medidor Personalizado ",
-  "description": "Un gráfico de medidor con rangos de color totalmente configurables.",
+  "name": "Medidor de Prueba Mínimo",
+  "organization": "carlosseijas-oss",
+  "description": "Una versión de prueba simplificada para depurar.",
   "logoUrl": "https://i.imgur.com/S6pKYyT.png",
-  "organization": "Carlos Seijas",
   "organizationUrl": "https://github.com/carlosseijas-oss",
   "supportUrl": "https://github.com/carlosseijas-oss",
   "packageUrl": "https://carlosseijas-oss.github.io/medidor-looker-studio",
@@ -11,10 +11,9 @@
   "devMode": "DEVMODE_ENABLED",
   "components": [
     {
-      "id": "gaugeComponent",
-      "name": "Medidor Flexible",
-      "description": "Define los rangos exactos para cada color (Rojo=Bajo, Verde=Alto).",
-      "iconUrl": "https://i.imgur.com/S6pKYyT.png",
+      "id": "minimalGaugeComponent",
+      "name": "Medidor Mínimo de Prueba",
+      "description": "Una versión de prueba simplificada.",
       "resource": {
         "js": "https://carlosseijas-oss.github.io/medidor-looker-studio/gauge.js",
         "css": "https://carlosseijas-oss.github.io/medidor-looker-studio/gauge.css"
@@ -22,31 +21,14 @@
     }
   ],
   "data": [
-    { "id": "metric", "label": "Métrica", "type": "METRIC", "options": { "min": 1, "max": 1 } }
-  ],
-  "style": [
     {
-      "id": "gaugeSettings",
-      "label": "Configuración del Medidor",
-      "elements": [
-        { "id": "minValue", "label": "Valor Mínimo", "type": "NUMBER", "defaultValue": 0 },
-        { "id": "maxValue", "label": "Valor Máximo", "type": "NUMBER", "defaultValue": 100 },
-        {
-          "id": "endLowRange",
-          "label": "Valor donde termina el rango 'Bajo' (Rojo)",
-          "type": "NUMBER",
-          "defaultValue": 33
-        },
-        {
-          "id": "endMediumRange",
-          "label": "Valor donde termina el rango 'Medio' (Amarillo)",
-          "type": "NUMBER",
-          "defaultValue": 66
-        },
-        { "id": "lowColor", "label": "Color para 'Bajo' (Rojo)", "type": "FILL_COLOR", "defaultValue": "#F44336" },
-        { "id": "mediumColor", "label": "Color para 'Medio' (Amarillo)", "type": "FILL_COLOR", "defaultValue": "#FFC107" },
-        { "id": "highColor", "label": "Color para 'Alto' (Verde)", "type": "FILL_COLOR", "defaultValue": "#4CAF50" }
-      ]
+      "id": "metric",
+      "label": "Métrica",
+      "type": "METRIC",
+      "options": {
+        "min": 1,
+        "max": 1
+      }
     }
   ]
 }
