@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "id": "metric",
+      "label": "Métrica",
+      "type": "METRIC",
+      "options": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "style": [
+    {
+      "id": "gaugeSettings",
+      "label": "Configuración del Medidor",
+      "elements": [
+        { "id": "minValue", "label": "Valor Mínimo", "type": "NUMBER", "defaultValue": 0 },
+        { "id": "maxValue", "label": "Valor Máximo", "type": "NUMBER", "defaultValue": 100 },
+        {
+          "id": "endLowRange",
+          "label": "Valor donde termina el rango 'Bajo' (Rojo)",
+          "type": "NUMBER",
+          "defaultValue": 33
+        },
+        {
+          "id": "endMediumRange",
+          "label": "Valor donde termina el rango 'Medio' (Amarillo)",
+          "type": "NUMBER",
+          "defaultValue": 66
+        },
+        { "id": "lowColor", "label": "Color para 'Bajo' (Rojo)", "type": "FILL_COLOR", "defaultValue": "#F44336" },
+        { "id": "mediumColor", "label": "Color para 'Medio' (Amarillo)", "type": "FILL_COLOR", "defaultValue": "#FFC107" },
+        { "id": "highColor", "label": "Color para 'Alto' (Verde)", "type": "FILL_COLOR", "defaultValue": "#4CAF50" }
+      ]
+    }
+  ]
+}
